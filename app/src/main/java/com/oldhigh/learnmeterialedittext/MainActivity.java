@@ -1,8 +1,12 @@
 package com.oldhigh.learnmeterialedittext;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.oldhigh.learnmeterialedittext.view08.MaterialActivity;
+import com.oldhigh.learnmeterialedittext.view08.MaterialEditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,14 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final MaterialEditText met = findViewById(R.id.met);
+
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-
-                met.setNeedImage(!met.isNeedImage());
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext() , MaterialActivity.class));
             }
         });
+
     }
 }
