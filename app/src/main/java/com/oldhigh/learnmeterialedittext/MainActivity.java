@@ -7,6 +7,11 @@ import android.view.View;
 
 import com.oldhigh.learnmeterialedittext.view08.MaterialActivity;
 import com.oldhigh.learnmeterialedittext.view08.MaterialEditText;
+import com.oldhigh.learnmeterialedittext.view09.LayoutMeasureActivity;
+
+import java.util.concurrent.TimeUnit;
+
+import io.reactivex.Observable;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext() , MaterialActivity.class));
+                startActivity(new Intent(
+                        getApplicationContext() ,
+                        LayoutMeasureActivity.class
+                ));
             }
         });
 

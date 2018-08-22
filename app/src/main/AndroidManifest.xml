@@ -18,6 +18,10 @@
         </activity>
 
         <activity android:name=".view08.MaterialActivity"/>
+        <activity android:name=".view09.LayoutMeasureActivity"/>
+
+
+
     </application>
 
 </manifest>

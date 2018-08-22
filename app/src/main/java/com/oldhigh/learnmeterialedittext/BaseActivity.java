@@ -16,16 +16,16 @@ public abstract class BaseActivity extends AppCompatActivity{
     }
 
     /**
-     * 初始化view
-     */
-    protected abstract void initView();
-
-    /**
      *  获取布局的layout
      * @return
      */
     protected abstract int layoutResId() ;
 
+
+    /**
+     * 初始化view
+     */
+    protected abstract void initView();
 
 
 }
